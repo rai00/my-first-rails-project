@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    position:absolute;
+        background-color:#B1CB62;
+
+}
+a,p{
+    text-decoration:none;
+}
+#header{
+    width:100%;
+    height:100px;
+    position:absolute;
+    background-color:#B1CB62;
+}
+#header > #site-logo{
+    width:100px;
+    height:100px;
+    background-color:#B1CB62;
+    float:left;
+    margin-left:10px;
+    margin-right:10px;
+}
+#header > #site-title{
+   font-family: 'Lobster', cursive;
+   font-size:30px;
+   line-height:30px;
+   margin-top:40px; /* line-height of title and subtitle*/
+   color:#272A1D;
+   
+}
+#header > #site-subtitle{
+   font-size:18px;
+   line-height:20px;
+   color:#272A1D;
+}
+#site-menu{
+    line-height:30px;
+    background-color:#8AA536;
+    width:100%;
+    height:30px;
+    position:absolute;
+    top:100px;
+}
+#site-menu > .menu-item{
+    float:left;
+    padding-right:5px;
+    padding-left:5px;
+    color:#DEF39E;
+    
+    
+}
+#site-menu > .menu-item:first-child{
+    margin-left:120px;
+}
+#site-menu > .menu-item:hover{
+    background-color:#425700;
+    color:#DEF39E;
+}
+#content-wrapper{
+    width:90%;
+    min-height:calc(100% - 220px);
+    top:150px;
+    margin-left:5%;
+    color:#272A1D;
+    position:absolute;
+    background-color:#DEF39E;
+}
+#footer{
+    background-color:green;
+    height:50px;
+    width:100%;
+    position:relative;
+    display:none;
+}
+
